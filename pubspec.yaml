@@ -1,9 +1,8 @@
 name: color_converter
-version: 1.0.0
+version: 1.0.1
 description: A Flutter package for color conversion in Dart
 homepage: https://github.com/abdullahbokl/color_converter
-authors:
-  - Abdullah Khaled Elbokl <
+author: Abdullah Khaled Elbokl
 
 environment:
   sdk: '>=2.12.0 <4.0.0'
