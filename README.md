@@ -1,6 +1,5 @@
 # Color Converter
-
-This Dart package provides a utility class for converting hex color codes to various color types. It supports conversion to `Color`, `ColorSwatch`, `HSVColor`, `HSLColor`, `MaterialColor`, and `MaterialAccentColor`.
+This Dart package provides a utility class for converting both hex color codes and `Color` objects to various color types. It supports conversion to `Color`, `ColorSwatch`, `HSVColor`, `HSLColor`, `MaterialColor`, and `MaterialAccentColor`.
 
 ## Features
 
@@ -29,34 +28,28 @@ $ flutter pub get
 Import the package in your Dart file and use the hexToColor method:
 
 ```dart
-import 'package:color_converter/color_converter.dart';
+colorConverter() {
+  // from hex
+  final Color hexToColor = ColorConverter<Color>().convert('#FF6F00');
+  final hexToColorSwatch = ColorConverter<ColorSwatch>().convert('#FF6F00');
+  final hexToHSVColor = ColorConverter<HSVColor>().convert('#FF6F00');
+  final hexToHSLColor = ColorConverter<HSLColor>().convert('#FF6F00');
+  final hexToMaterialColor = ColorConverter<MaterialColor>().convert('#FF6F00');
+  final hexToMaterialAccentColor =
+  ColorConverter<MaterialAccentColor>().convert('#FF6F00');
 
-void colorConverter() {
-  // Hex to Color
-  final Color color = ColorConverter.hexToColor<Color>('#FF6F00');
-  print(color);
-
-  // Hex to ColorSwatch
-  ColorSwatch colorSwatch = ColorConverter.hexToColor<ColorSwatch>('#FF0000');
-  print(colorSwatch);
-
-  // Hex to HSVColor
-  HSVColor hsvColor = ColorConverter.hexToColor<HSVColor>('#FF0000');
-  print(hsvColor);
-
-  // Hex to HSLColor
-  HSLColor hslColor = ColorConverter.hexToColor<HSLColor>('#FF0000');
-  print(hslColor);
-
-  // Hex to MaterialColor
-  MaterialColor materialColor =
-  ColorConverter.hexToColor<MaterialColor>('#FF0000');
-  print(materialColor);
-
-  // Hex to MaterialAccentColor
-  MaterialAccentColor materialAccentColor =
-  ColorConverter.hexToColor<MaterialAccentColor>('#FF0000');
-  print(materialAccentColor);
+  // from color
+  final colorToColor = ColorConverter<Color>().convert(const Color(0xFFFF6F00));
+  final colorToColorSwatch =
+  ColorConverter<ColorSwatch>().convert(const Color(0xFFFF6F00));
+  final colorToHSVColor =
+  ColorConverter<HSVColor>().convert(const Color(0xFFFF6F00));
+  final colorToHSLColor =
+  ColorConverter<HSLColor>().convert(const Color(0xFFFF6F00));
+  final colorToMaterialColor =
+  ColorConverter<MaterialColor>().convert(const Color(0xFFFF6F00));
+  final colorToMaterialAccentColor =
+  ColorConverter<MaterialAccentColor>().convert(const Color(0xFFFF6F00));
 }
 ```
 
