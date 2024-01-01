@@ -5,7 +5,7 @@ author: Abdullah Khaled Elbokl
 homepage: https://github.com/abdullahbokl/color_converter
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: '>=2.12.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
