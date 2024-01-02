@@ -16,7 +16,7 @@ Add this package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  color_type_converter: ^1.0.4
+  color_type_converter: ^1.0.5
 ```
 
 Run the following command to get the dependencies:
@@ -101,15 +101,27 @@ colorConverter() {
   );
 
   // from MaterialColor
-  final Color color5 = ColorConverter<Color>().convert(Colors.red);
+  const matColor = MaterialColor(0xFFFF0000, {
+    50: Color(0xFFFFEBEE),
+    100: Color(0xFFFFCDD2),
+    200: Color(0xFFEF9A9A),
+    300: Color(0xFFE57373),
+    400: Color(0xFFEF5350),
+    500: Color(0xFFF44336),
+    600: Color(0xFFE53935),
+    700: Color(0xFFD32F2F),
+    800: Color(0xFFC62828),
+    900: Color(0xFFB71C1C),
+  });
+  final Color color5 = ColorConverter<Color>().convert(matColor);
   final ColorSwatch colorSwatch5 =
-  ColorConverter<ColorSwatch>().convert(Colors.red);
-  final HSVColor hsvColor5 = ColorConverter<HSVColor>().convert(Colors.red);
-  final HSLColor hslColor5 = ColorConverter<HSLColor>().convert(Colors.red);
+  ColorConverter<ColorSwatch>().convert(matColor);
+  final HSVColor hsvColor5 = ColorConverter<HSVColor>().convert(matColor);
+  final HSLColor hslColor5 = ColorConverter<HSLColor>().convert(matColor);
   final MaterialColor materialColor5 =
-  ColorConverter<MaterialColor>().convert(Colors.red);
+  ColorConverter<MaterialColor>().convert(matColor);
   final MaterialAccentColor materialAccentColor5 =
-  ColorConverter<MaterialAccentColor>().convert(Colors.red);
+  ColorConverter<MaterialAccentColor>().convert(matColor);
 }
 ```
 
