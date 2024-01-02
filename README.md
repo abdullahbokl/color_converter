@@ -16,7 +16,7 @@ Add this package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  color_type_converter: ^1.0.3
+  color_type_converter: ^1.0.4
 ```
 
 Run the following command to get the dependencies:
