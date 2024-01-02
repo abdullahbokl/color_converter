@@ -1,14 +1,14 @@
 # Color Converter
-This Dart package provides a utility class for converting both hex color codes and `Color` objects to various color types. It supports conversion to `Color`, `ColorSwatch`, `HSVColor`, `HSLColor`, `MaterialColor`, and `MaterialAccentColor`.
+
+This Dart package provides a utility class for converting both hex color codes and `Color` objects to various color
+types. It supports conversion to `Color`, `ColorSwatch`, `HSVColor`, `HSLColor`, `MaterialColor`,
+and `MaterialAccentColor`.
 
 ## Features
 
-- Hex to `Color` conversion
-- Hex to `ColorSwatch` conversion
-- Hex to `HSVColor` conversion
-- Hex to `HSLColor` conversion
-- Hex to `MaterialColor` conversion
-- Hex to `MaterialAccentColor` conversion
+- The types that can be converted are `Color`, `ColorSwatch`, `HSVColor`, `HSLColor`, `MaterialColor`,
+  and `MaterialAccentColor`.
+- Any type can be converted to any other type.
 
 ## Getting Started
 
@@ -18,7 +18,9 @@ Add this package to your `pubspec.yaml` file:
 dependencies:
   color_type_converter: ^1.0.3
 ```
-Run the following command to get the dependencies: 
+
+Run the following command to get the dependencies:
+
 ```bash
 $ flutter pub get
 ```
