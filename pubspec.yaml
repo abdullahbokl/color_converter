@@ -6,7 +6,7 @@ author: Abdullah Khaled Elbokl
 
 environment:
   sdk: '>=2.12.0 <4.0.0'
-  flutter: ">=1.17.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
