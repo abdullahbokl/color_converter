@@ -1,4 +1,4 @@
-name: color_converter
+name: color_type_converter
 version: 1.0.2
 description: A Flutter package for color conversion in Dart
 homepage: https://github.com/abdullahbokl/color_converter

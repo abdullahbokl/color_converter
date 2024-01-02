@@ -1,4 +1,4 @@
-import 'package:color_converter/exports.dart';
+import 'package:color_type_converter/exports.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

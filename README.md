@@ -28,7 +28,7 @@ $ flutter pub get
 Import the package in your Dart file and use the hexToColor method:
 
 ```dart
-import 'package:color_converter/color_converter.dart';
+import 'package:color_converter/color_type_converter.dart';
 import 'package:flutter/material.dart';
 
 colorConverter() {
@@ -53,6 +53,8 @@ colorConverter() {
   ColorConverter<MaterialColor>().convert(const Color(0xFFFF6F00));
   final colorToMaterialAccentColor =
   ColorConverter<MaterialAccentColor>().convert(const Color(0xFFFF6F00));
+  
+  
 }
 ```
 
