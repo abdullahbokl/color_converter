@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    runs-on: android-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
@@ -20,6 +20,5 @@ jobs:
 
       - name: Build and Publish
         run: |
-          # Add your build and publish commands here
           flutter pub get
           flutter pub publish
