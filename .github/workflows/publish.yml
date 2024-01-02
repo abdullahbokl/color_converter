@@ -1,0 +1,24 @@
+name: color_type_converter
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '2.x'
+
+      - name: Build and Publish
+        run: |
+          flutter pub get
+          flutter pub publish
