@@ -16,7 +16,7 @@ Add this package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  color_converter: ^1.0.3
+  color_type_converter: ^1.0.3
 ```
 Run the following command to get the dependencies: 
 ```bash
@@ -28,7 +28,7 @@ $ flutter pub get
 Import the package in your Dart file and use the hexToColor method:
 
 ```dart
-import 'package:color_converter/color_type_converter.dart';
+import 'package:color_type_converter/color_type_converter.dart';
 import 'package:flutter/material.dart';
 
 colorConverter() {
@@ -113,4 +113,4 @@ colorConverter() {
 
 ## Additional information
 
-- Report issues or contribute on [GitHub](https://github.com/abdullahbokl/color_converter).
+- Report issues or contribute on [GitHub](https://github.com/abdullahbokl/color_type_converter).
